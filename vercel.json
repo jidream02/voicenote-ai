@@ -3,6 +3,10 @@
     {
       "source": "/api/:path*",
       "destination": "https://voicenote-ai-production.up.railway.app/api/:path*"
+    },
+    {
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
     }
   ]
 }
